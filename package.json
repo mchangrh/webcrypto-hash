@@ -1,0 +1,23 @@
+{
+  "name": "@mchangrh/webcrypto-hash",
+  "version": "1.0.0",
+  "description": "hash with CF Workers & WebCrypto",
+  "main": "dist/hash.js",
+  "scripts": {
+    "build": "uglifyjs src/hash.js -o dist/hash.js -c -m",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchangrh/webcrypto-hash.git"
+  },
+  "author": "Michael Chang <michael@mchang.name>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mchangrh/webcrypto-hash/issues"
+  },
+  "homepage": "https://github.com/mchangrh/webcrypto-hash#readme",
+  "dependencies": {
+    "uglifyjs": "^2.4.11"
+  }
+}
