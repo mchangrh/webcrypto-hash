@@ -26,5 +26,6 @@ async function handleRequest(request) {
   const input = searchParams.get('input');
   const times = searchParams.get('times') ?? 5000;
   const algo = searchParams.get('algo') ?? "SHA-256";
+  if (!input) return new Response("Missing input parameter", { status: 400 });
   return new Response(await multiHash(input, algo, times));
 }
